@@ -1,0 +1,171 @@
+.header-main {
+  width: 100%;
+  display: block;
+}
+
+.hero-img {
+  width: 100%;
+  height: 40vh;
+  background-image: url(../images/image-hero-mobile.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.header-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem 0 1rem;
+}
+.header-content-body {
+  width: 80%;
+  margin: 1rem 0;
+  color: hsl(0, 0%, 41%);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.header-content-heading h2 {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.header-content-btn {
+  padding: 0.8rem 1.2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-content-clients {
+  margin-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content-clients img {
+  min-width: 15%;
+  min-height: 14px;
+  max-width: 25%;
+  max-height: 18px;
+}
+
+.header-upper
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (min-width: 700px) 
+{
+    .header-main
+    {
+        width: 80%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        height:60vh;
+        
+    }
+
+    .hero-img
+    {
+        width: 45%;
+        height: 100%;
+        background-image: url(../images/image-hero-desktop.png);
+        
+    }
+    .header-content
+    {
+        width:60%;
+        height:100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+    }
+.header-upper
+{
+align-items: flex-start;
+height:90%;
+padding-top:2rem;
+justify-content: center;
+}
+    
+    .header-content-heading h2 {
+        margin-top: 1rem;
+        font-weight: 700;
+        font-size: 5vh;
+        padding:1rem 0;
+        
+
+      }
+
+      .header-content-btn{
+          margin-top:1rem;
+      }
+
+    .header-content-body
+    {
+        text-align: left;
+        font-size: 18px;
+        width:60%;
+ 
+    }
+
+    .header-content-clients 
+    {
+       
+        margin:0;
+    }
+
+    .header-content-clients img 
+    {
+
+        min-width: 10%;
+        height:100%;
+        min-height: 100%;
+    }
+}
+
+
+
+@media (min-width: 1440px)
+{
+    .header-main
+    {
+        width: 80%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        height:75vh;
+        
+    }
+
+    .header-content-heading h2 {
+       
+        font-size: 8vh;
+        padding:1.5rem 0;
+        
+
+      }
+
+      .header-content-clients 
+      {
+        height:5%;
+          width: 70%;
+      }
+}

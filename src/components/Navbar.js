@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <div id="nav">
-      <div>
+      <div id="logo">
         <img src={logo} alt="logo" />
       </div>
 
@@ -97,6 +97,60 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+
+      <div className="desktop-menu">
+
+      <ul className="menu-list">
+          <li className="dropdown-li">
+            Features &nbsp;{"    "} <img className="drop-arrrow" src={downArrow} alt="menu" />
+           
+          </li>
+
+          {/* <div className={dropdown[0] ? "menu-dropdown" : "none"}>
+          <div className="menu-dropdown-item">
+                <img src={todo}/> <li>Todo List</li>
+            </div>
+            <div  className="menu-dropdown-item">
+                <img src={calender}/> <li>Calender</li>
+            </div>
+            <div className="menu-dropdown-item">
+                <img src={reminder}/> <li>Reminders</li>
+            </div>
+            <div className="menu-dropdown-item">
+                <img src={planning}/> <li>Planning</li>
+            </div>
+          </div> */}
+
+          <li
+           
+          >
+            Company &nbsp;{"    "}
+            <img src={downArrow} alt="menu" />
+       
+          </li>
+
+          {/* <div className={dropdown[1] ? "menu-dropdown" : "none"}>
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+          </div> */}
+          <li>Careers</li>
+
+          <li>About</li>
+        </ul>
+
+        <div className="menu-btns">
+          <div className="login-btn">
+              Login
+          </div>
+
+          <div className="register-btn">
+              Register
+          </div>
+        </div>
+        </div>
+
 
       <div className={showMenu ? "backdrop-blur" : "hidden"}></div>
     </div>
