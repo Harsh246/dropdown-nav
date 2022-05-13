@@ -8,7 +8,7 @@ import audiophile from '../images/client-audiophile.svg';
 
 export default function Header() {
   return (
-    <div className='header-main'>
+    <main className='header-main'>
       
      <div className='hero-img'>
 
@@ -39,7 +39,7 @@ Get your team in sync. no matter your location. Streamline processes, create tea
 <img  src={maker} alt="client" />
 </div>
 </div>
-    </div>
+    </main>
 
 
 

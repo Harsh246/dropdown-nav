@@ -18,7 +18,7 @@ export default function Navbar() {
   const [dropdown, setDropdown] = useState([false, false]);
 
   return (
-    <div id="nav">
+    <main id="nav">
       <div id="logo">
         <img src={logo} alt="logo" />
       </div>
@@ -31,7 +31,7 @@ export default function Navbar() {
         <div style={{ marginLeft: "auto" }}>
           <img onClick={() => setMenu(false)} src={closeMenu} alt="menu" />
         </div>
-        <ul className="menu-list">
+        <div className="menu-list">
           <li
             onClick={() => {
               let newState = !dropdown[0];
@@ -85,7 +85,7 @@ export default function Navbar() {
           <li>Careers</li>
 
           <li>About</li>
-        </ul>
+        </div>
 
         <div className="menu-btns">
           <div className="login-btn">
@@ -101,10 +101,10 @@ export default function Navbar() {
 
       <div className="desktop-menu">
 
-      <ul className="menu-list">
+      <div className="menu-list">
           <li className="dropdown-li">
             Features &nbsp;{"    "} <img className="drop-arrrow" src={downArrow} alt="menu" />
-         <ul className="desktop-menu-dropdown">
+         <div className="desktop-menu-dropdown">
           <div className="menu-dropdown-item">
                 <img  alt="icon" src={todo}/><li>Todo list</li>
             </div>
@@ -117,14 +117,14 @@ export default function Navbar() {
             <div className="menu-dropdown-item">
                 <img  alt="icon" src={planning}/> <li>Planning</li>
             </div>
-          </ul>    
+          </div>    
           </li>
 
                       
 
           <li className="dropdown-li">
             Company &nbsp;{"    "} <img className="drop-arrrow" src={downArrow} alt="menu" />
-         <ul className="desktop-menu-dropdown">
+         <div className="desktop-menu-dropdown">
          <div  className="menu-dropdown-item">
               <li>History</li>
             </div>
@@ -135,7 +135,7 @@ export default function Navbar() {
               <li>Blog</li>
             </div>
           
-          </ul>    
+          </div>    
           </li>
 
           {/* <div className={dropdown[1] ? "menu-dropdown" : "none"}>
@@ -144,7 +144,7 @@ export default function Navbar() {
           <li>Careers</li>
 
           <li>About</li>
-        </ul>
+        </div>
 
         <div className="menu-btns">
           <div className="login-btn">
@@ -159,6 +159,6 @@ export default function Navbar() {
 
 
       <div className={showMenu ? "backdrop-blur" : "hidden"}></div>
-    </div>
+    </main>
   );
 }
