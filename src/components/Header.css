@@ -49,7 +49,7 @@
 
 .header-content-clients {
   margin-top: 2.5rem;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -78,7 +78,7 @@
         margin:0 auto;
         display: flex;
         flex-direction: row-reverse;
-        height:60vh;
+        height:70vh;
         
     }
 

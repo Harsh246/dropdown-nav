@@ -49,16 +49,16 @@ export default function Navbar() {
 
           <div className={dropdown[0] ? "menu-dropdown" : "none"}>
           <div className="menu-dropdown-item">
-                <img src={todo}/> <li>Todo List</li>
+                <img alt="icon"  src={todo}/> <li>Todo List</li>
             </div>
             <div  className="menu-dropdown-item">
-                <img src={calender}/> <li>Calender</li>
+                <img  alt="icon" src={calender}/> <li>Calender</li>
             </div>
             <div className="menu-dropdown-item">
-                <img src={reminder}/> <li>Reminders</li>
+                <img  alt="icon" src={reminder}/> <li>Reminders</li>
             </div>
             <div className="menu-dropdown-item">
-                <img src={planning}/> <li>Planning</li>
+                <img  alt="icon" src={planning}/> <li>Planning</li>
             </div>
           </div>
 
@@ -71,9 +71,9 @@ export default function Navbar() {
           >
             Company &nbsp;{"    "}
             {dropdown[1] ? (
-              <img src={upArrow} alt="menu" onClick={() => setMenu(true)} />
+              <img   src={upArrow} alt="menu" onClick={() => setMenu(true)} />
             ) : (
-              <img src={downArrow} alt="menu" onClick={() => setMenu(true)} />
+              <img  src={downArrow} alt="menu" onClick={() => setMenu(true)} />
             )}
           </li>
 
@@ -104,36 +104,42 @@ export default function Navbar() {
       <ul className="menu-list">
           <li className="dropdown-li">
             Features &nbsp;{"    "} <img className="drop-arrrow" src={downArrow} alt="menu" />
-           
-          </li>
-
-          {/* <div className={dropdown[0] ? "menu-dropdown" : "none"}>
+         <ul className="desktop-menu-dropdown">
           <div className="menu-dropdown-item">
-                <img src={todo}/> <li>Todo List</li>
+                <img  alt="icon" src={todo}/><li>Todo list</li>
             </div>
             <div  className="menu-dropdown-item">
-                <img src={calender}/> <li>Calender</li>
+                <img alt="icon"  src={calender}/> <li>Calender</li>
             </div>
             <div className="menu-dropdown-item">
-                <img src={reminder}/> <li>Reminders</li>
+                <img  alt="icon" src={reminder}/> <li>Reminders</li>
             </div>
             <div className="menu-dropdown-item">
-                <img src={planning}/> <li>Planning</li>
+                <img  alt="icon" src={planning}/> <li>Planning</li>
             </div>
-          </div> */}
+          </ul>    
+          </li>
 
-          <li
-           
-          >
-            Company &nbsp;{"    "}
-            <img src={downArrow} alt="menu" />
-       
+                      
+
+          <li className="dropdown-li">
+            Company &nbsp;{"    "} <img className="drop-arrrow" src={downArrow} alt="menu" />
+         <ul className="desktop-menu-dropdown">
+         <div  className="menu-dropdown-item">
+              <li>History</li>
+            </div>
+            <div className="menu-dropdown-item">
+              <li>Our Team</li>
+            </div>
+            <div className="menu-dropdown-item">
+              <li>Blog</li>
+            </div>
+          
+          </ul>    
           </li>
 
           {/* <div className={dropdown[1] ? "menu-dropdown" : "none"}>
-          <li>History</li>
-          <li>Our Team</li>
-          <li>Blog</li>
+         
           </div> */}
           <li>Careers</li>
 
