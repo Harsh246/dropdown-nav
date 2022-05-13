@@ -18,7 +18,7 @@ export default function Header() {
 
  
   <div   className='header-content-heading' >
-    <h2>Make <br className='header-break'/> remote work</h2>
+    <h1>Make <br className='header-break'/> remote work</h1>
   </div>
 
   <div className='header-content-body'>

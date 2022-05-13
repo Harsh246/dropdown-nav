@@ -48,20 +48,30 @@ export default function Navbar() {
               )}
             </li>
 
-            <div className={dropdown[0] ? "menu-dropdown" : "none"}>
-              <div className="menu-dropdown-item">
-                <img alt="icon" src={todo} /> <li>Todo List</li>
-              </div>
-              <div className="menu-dropdown-item">
-                <img alt="icon" src={calender} /> <li>Calender</li>
-              </div>
-              <div className="menu-dropdown-item">
-                <img alt="icon" src={reminder} /> <li>Reminders</li>
-              </div>
-              <div className="menu-dropdown-item">
-                <img alt="icon" src={planning} /> <li>Planning</li>
-              </div>
-            </div>
+            <ul className={dropdown[0] ? "menu-dropdown" : "none"}>
+              <li className="menu-dropdown-item">
+                {" "}
+                <img alt="icon" src={todo} /> &nbsp; &nbsp;Todo List
+              </li>
+
+              <li className="menu-dropdown-item">
+                {" "}
+                <img alt="icon" src={calender} />
+                &nbsp;&nbsp; Calender
+              </li>
+
+              <li className="menu-dropdown-item">
+                {" "}
+                <img alt="icon" src={reminder} />
+                &nbsp;&nbsp; Reminders
+              </li>
+
+              <li className="menu-dropdown-item">
+                {" "}
+                <img alt="icon" src={planning} />
+                &nbsp;&nbsp; Planning
+              </li>
+            </ul>
 
             <li
               onClick={() => {
@@ -101,19 +111,28 @@ export default function Navbar() {
               Features &nbsp;{"    "}{" "}
               <img className="drop-arrrow" src={downArrow} alt="menu" />
               <ul className="desktop-menu-dropdown">
-                <div className="menu-dropdown-item">
-                  <img alt="icon" src={todo} />
-                  <li>Todo list</li>
-                </div>
-                <div className="menu-dropdown-item">
-                  <img alt="icon" src={calender} /> <li>Calender</li>
-                </div>
-                <div className="menu-dropdown-item">
-                  <img alt="icon" src={reminder} /> <li>Reminders</li>
-                </div>
-                <div className="menu-dropdown-item">
-                  <img alt="icon" src={planning} /> <li>Planning</li>
-                </div>
+                <li className="menu-dropdown-item">
+                  {" "}
+                  <img alt="icon" src={todo} /> &nbsp; &nbsp;Todo List
+                </li>
+
+                <li className="menu-dropdown-item">
+                  {" "}
+                  <img alt="icon" src={calender} />
+                  &nbsp;&nbsp; Calender
+                </li>
+
+                <li className="menu-dropdown-item">
+                  {" "}
+                  <img alt="icon" src={reminder} />
+                  &nbsp;&nbsp; Reminders
+                </li>
+
+                <li className="menu-dropdown-item">
+                  {" "}
+                  <img alt="icon" src={planning} />
+                  &nbsp;&nbsp; Planning
+                </li>
               </ul>
             </li>
 
@@ -121,21 +140,14 @@ export default function Navbar() {
               Company &nbsp;{"    "}{" "}
               <img className="drop-arrrow" src={downArrow} alt="menu" />
               <ul className="desktop-menu-dropdown">
-                <div className="menu-dropdown-item">
-                  <li>History</li>
-                </div>
-                <div className="menu-dropdown-item">
-                  <li>Our Team</li>
-                </div>
-                <div className="menu-dropdown-item">
-                  <li>Blog</li>
-                </div>
+                <li className="menu-dropdown-item">History</li>
+
+                <li className="menu-dropdown-item">Our Team</li>
+
+                <li className="menu-dropdown-item">Blog</li>
               </ul>
             </li>
 
-            {/* <div className={dropdown[1] ? "menu-dropdown" : "none"}>
-         
-          </div> */}
             <li>Careers</li>
 
             <li>About</li>
