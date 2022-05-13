@@ -46,9 +46,7 @@ export default function Navbar() {
               ) : (
                 <img src={downArrow} alt="menu" onClick={() => setMenu(true)} />
               )}
-            </li>
-
-            <ul className={dropdown[0] ? "menu-dropdown" : "none"}>
+          <ul className={dropdown[0] ? "menu-dropdown" : "none"}>
               <li className="menu-dropdown-item">
                 {" "}
                 <img alt="icon" src={todo} /> &nbsp; &nbsp;Todo List
@@ -71,7 +69,9 @@ export default function Navbar() {
                 <img alt="icon" src={planning} />
                 &nbsp;&nbsp; Planning
               </li>
-            </ul>
+            </ul>    </li>
+
+          
 
             <li
               onClick={() => {
@@ -86,13 +86,13 @@ export default function Navbar() {
               ) : (
                 <img src={downArrow} alt="menu" onClick={() => setMenu(true)} />
               )}
-            </li>
-
-            <ul className={dropdown[1] ? "menu-dropdown" : "none"}>
+           <ul className={dropdown[1] ? "menu-dropdown" : "none"}>
               <li>History</li>
               <li>Our Team</li>
               <li>Blog</li>
-            </ul>
+            </ul>  </li>
+
+           
             <li>Careers</li>
 
             <li>About</li>
