@@ -1,6 +1,5 @@
 import React from 'react'
 import './Header.css';
-import hero from '../images/image-hero-mobile.png';
 import meet from '../images/client-meet.svg';
 import databiz from '../images/client-databiz.svg';
 import maker from '../images/client-maker.svg';
